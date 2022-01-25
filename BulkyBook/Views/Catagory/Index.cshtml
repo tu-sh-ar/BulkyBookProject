@@ -4,8 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index Catagory</h1>
-
+<div class="container d-flex p-0">
+    <h1 class="col-6">Catagory   </h1>
+    <a class="btn btn-warning col-6" asp-controller="Catagory" asp-action="Create" >New Catagory +</a>
+</div>
 <table class = "table table-bordered table-striped  bg-light">
     <thead >
         <th>Id</th>
@@ -13,6 +15,7 @@
         <th>Order</th>
         <th>Date</th>
     </thead>
+
     <tbody>
         @foreach (var obj in Model)
         {
